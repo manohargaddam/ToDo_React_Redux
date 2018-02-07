@@ -1,3 +1,5 @@
-import React from 'react';
+import React from 'react'
 
-export default ({name}) => <h1>Hello {name}!</h1>;
+export default ({ name, completed, onClick}) => 
+(<li style={{ cursor: "pointer", textDecoration: completed ? "line-through" : "none" }}
+  onClick={onClick} >{name}</li>)
